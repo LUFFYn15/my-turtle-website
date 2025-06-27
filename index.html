@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о красноухих черепахах и истории двух питомцев">
+    <title>Красноухие черепахи</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d4edda;
+            color: #333;
+            position: relative;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d4edda;
+        }
+        section {
+            padding: 6rem 2rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        h1, h2 {
+            color: #155724;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .turtle-photo {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .bubble {
+            position: absolute;
+            bottom: -50px;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: rise 10s infinite ease-in;
+            z-index: -1;
+        }
+        @keyframes rise {
+            0% { transform: translateY(0); opacity: 0.5; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+        .bubble:nth-child(1) { left: 10%; animation-delay: 0s; width: 15px; height: 15px; }
+        .bubble:nth-child(2) { left: 30%; animation-delay: 2s; width: 25px; height: 25px; }
+        .bubble:nth-child(3) { left: 50%; animation-delay: 4s; width: 20px; height: 20px; }
+        .bubble:nth-child(4) { left: 70%; animation-delay: 6s; width: 18px; height: 18px; }
+        .bubble:nth-child(5) { left: 90%; animation-delay: 8s; width: 22px; height: 22px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Красноухие черепахи</h1>
+        <nav>
+            <a href="#breed">О породе</a>
+            <a href="#story">История моих черепах</a>
+            <a href="#facts">Факты</a>
+        </nav>
+    </header>
+
+    <section id="breed">
+        <h2>О породе красноухих черепах</h2>
+        <img src="https://via.placeholder.com/200x150?text=Cherepaha+1" alt="Красноухая черепаха на камне" class="turtle-photo">
+        <img src="https://via.placeholder.com/200x150?text=Cherepaha+2" alt="Красноухая черепаха на белой поверхности" class="turtle-photo">
+        <p>Красноухая черепаха (Trachemys scripta elegans) — это пресноводная черепаха, происходящая из Северной Америки. Её легко узнать по ярким красным или оранжевым полосам за глазами. Впервые они были описаны в 19 веке и стали популярными домашними животными благодаря своему необычному виду и относительной простоте ухода. Эти черепахи живут в реках, озёрах и болотах, а в неволе могут доживать до 30-40 лет при правильном уходе.</p>
+    </section>
+
+    <section id="story">
+        <h2>История моих черепах</h2>
+        <p>Наша история началась во Владивостоке, когда мы купили двух крошечных красноухих черепашек. Они были совсем маленькими, размером с человеческий палец, и сразу покорили наши сердца. Мы приобрели для них уютные домики, усыпали их камушками и поставили на подоконник, чтобы они могли греться на солнышке. Но однажды из-за слишком яркого света одной из черепашек — кажется, той, которую мы называли Катей — стало плохо. Мы очень переживали, и папа срочно отвёз её в ветеринарную клинику. К счастью, её вылечили, и она осталась с нами.</p>
+        <p>Спустя два года черепашки подросли до размера ладошки, и у каждой начал проявляться свой характер. Одна из них была настоящей непоседой: она бегала по полу, любопытно исследуя всё вокруг, и даже пыталась кусаться, если что-то ей не нравилось. Вторая же была более робкой — часто пряталась в своём панцире и выходила только тогда, когда чувствовала себя спокойно. Но однажды нам пришлось пережить грустный момент: одна из черепашек, мальчик, умерла. Это было тяжело, но мы продолжали заботиться о той, что осталась.</p>
+        <p>Позже мы узнали неожиданную правду: вторая черепаха, которую мы считали девочкой и называли Катей, тоже оказалась мальчиком. Всё это время мы думали, что у нас пара — мальчик и девочка, но теперь пришлось пересмотреть наши предположения. Мы решили поменять имя с Кати на Костил — оно было созвучно старому и отлично подошло нашему питомцу. Сейчас Костил живёт прекрасно: он стал более активным, заметно вырос и радует нас каждый день.</p>
+    </section>
+
+    <section id="facts">
+        <h2>Факты о красноухих черепахах</h2>
+        <ul>
+            <li>Они могут вырасти до 30 см в длину.</li>
+            <li>Эти черепахи всеядны: едят растения, рыбу и даже насекомых.</li>
+            <li>Их красные полосы со временем могут тускнеть.</li>
+            <li>Они любят греться на солнце, поэтому им нужен доступ к лампе в аквариуме.</li>
+            <li>Красноухие черепахи могут издавать шипящие звуки, если напуганы.</li>
+        </ul>
+        <img src="https://via.placeholder.com/200x150?text=Cherepaha+3" alt="Красноухая черепаха ест насекомое" class="turtle-photo">
+        <img src="https://via.placeholder.com/200x150?text=Cherepaha+4" alt="Красноухая черепаха смотрит в камеру" class="turtle-photo">
+    </section>
+
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const maxScroll = document.body.scrollHeight - window.innerHeight;
+            const darkness = Math.min(scrollPosition / maxScroll, 1);
+            const greenValue = 212 - (darkness * 100);
+            document.body.style.backgroundColor = `rgb(${greenValue}, 237, ${greenValue + 18})`;
+        });
+    </script>
+</body>
+</html>
